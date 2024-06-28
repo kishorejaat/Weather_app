@@ -1,0 +1,9 @@
+javaScript :
+
+readyState {
+0 (UNSENT): The XMLHttpRequest object has been created, but the open() method hasn't been called yet.
+1 (OPENED): The open() method has been called, but the request hasn't been sent yet.
+2 (HEADERS_RECEIVED): The send() method has been called, and the response headers and status are available.
+3 (LOADING): The response body is being received.
+4 (DONE): The request has been completed, and the response is fully received.
+}
