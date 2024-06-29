@@ -1,13 +1,11 @@
-// Get references to HTML elements
 const cityInput = document.getElementById('city-input');
 const searchBtn = document.getElementById('search-btn');
 const weatherInfo = document.getElementById('weather-info');
 
-// Weather API key and base URL
-const apiKey = '80fe06eda529d2167b3b74cb08847d2c'; // Replace with your actual API key
-const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+const apiKey = '80fe06eda529d2167b3b74cb08847d2c'; // API key which u'll have to generate one for yourself;
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather'; // url of the server from which u want to pull out info;
 
-// Event listener for search button click
+// search button click action
 searchBtn.addEventListener('click', () => {
     const cityName = cityInput.value.trim();
     if (cityName) {
@@ -32,7 +30,7 @@ async function getWeatherData(city) {
     }
 }
 
-// Function to display weather data on the UI
+// Function to display weather data ;
 function displayWeatherData(data) {
     const { name, main, weather } = data;
     const weatherDescription = weather[0].description;
