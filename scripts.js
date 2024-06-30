@@ -2,7 +2,7 @@ const cityInput = document.getElementById('city-input');
 const searchBtn = document.getElementById('search-btn');
 const weatherInfo = document.getElementById('weather-info');
 
-const apiKey = '80fe06eda529d2167b3b74cb08847d2c'; // API key which u'll have to generate one for yourself;
+const apiKey = 'YOUR_API_KEY'; // API key which u'll have to generate one for yourself;
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather'; // url of the server from which u want to pull out info;
 
 // search button click action
